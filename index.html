@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CHECKPOINT 1: change the tab title to your name -->
+  <title>Your Name | Portfolio</title>
+  <meta name="description" content="Personal portfolio">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="nav">
+    <a class="nav-logo" href="#top">
+      <!-- CHECKPOINT 1: your initials -->
+      <span class="avatar">YN</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">◐</button>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero">
+      <p class="eyebrow">Hi, I'm</p>
+      <!-- CHECKPOINT 1: your name + a one-line tagline -->
+      <h1>Your Name</h1>
+      <p class="tagline">
+        I'm a <span id="rotatingRole" class="highlight">CS student</span> at UNLV.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#projects">See my work</a>
+        <a class="btn btn-ghost" href="#contact">Get in touch</a>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section id="about" class="section">
+      <h2>About</h2>
+      <!-- CHECKPOINT 3: write 2-3 sentences about yourself -->
+      <p>
+        Write a few sentences here: your major, what you like building,
+        and what you're looking for (internships, hackathon teammates, etc.).
+      </p>
+
+      <h3>Skills</h3>
+      <!-- CHECKPOINT 3: list your skills (add or delete <li> tags) -->
+      <ul class="skills">
+        <li>Python</li>
+        <li>C++</li>
+        <li>HTML &amp; CSS</li>
+        <li>Git</li>
+      </ul>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="project-grid">
+
+        <!-- CHECKPOINT 3: edit this card. To add a project, copy everything
+             from <article> to </article> and paste it below. -->
+        <article class="project-card">
+          <h3>Project Name</h3>
+          <p>One or two sentences on what it does and what you used to build it.</p>
+          <ul class="tags">
+            <li>Python</li>
+            <li>Flask</li>
+          </ul>
+          <a class="card-link" href="https://github.com/" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+
+        <article class="project-card">
+          <h3>Another Project</h3>
+          <p>Class projects count too. Describe the problem it solves.</p>
+          <ul class="tags">
+            <li>C++</li>
+          </ul>
+          <a class="card-link" href="https://github.com/" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+
+        <article class="project-card">
+          <h3>This Website</h3>
+          <p>Built and deployed at the UNLV Software Engineering Club's Zero to Deployed workshop.</p>
+          <ul class="tags">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+          <a class="card-link" href="https://github.com/" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Want to work together or just say hi? Find me here:</p>
+      <!-- CHECKPOINT 3: replace with your real links (delete any you don't use) -->
+      <div class="contact-links">
+        <a class="btn btn-ghost" href="mailto:you@example.com">Email</a>
+        <a class="btn btn-ghost" href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Your Name · Built at SEC's Zero to Deployed workshop</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
