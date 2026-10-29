@@ -1,4 +1,4 @@
-# Zero to Deployed: Portfolio Starter
+#Portfolio Starter
 
 **UNLV Software Engineering Club workshop.** By the end, you'll have a personal portfolio site live on the internet at a URL you can put on your resume and text to your friends!
 
@@ -24,7 +24,7 @@ git --version
 
 ---
 
-## Step 1: Get your own copy (≈5 min)
+## Step 1: Get your own copy 
 
 1. On this repo's GitHub page, click the green **Use this template** button → **Create a new repository**.
 2. Name it `portfolio`, set it to **Public**, and click **Create repository**.
@@ -39,11 +39,11 @@ code .
 
 (If `code .` doesn't work, open VS Code and use **File → Open Folder** instead.)
 
-## Step 2: Run it locally (≈2 min)
+## Step 2: Run it locally 
 
 Right-click `index.html` in VS Code → **Open with Live Server**. Your site opens in the browser, and it refreshes every time you save a file. Keep it open next to your code.
 
-## Step 3: Make it yours (≈20 min)
+## Step 3: Make it yours 
 
 Search the files for `CHECKPOINT` (Ctrl/Cmd + Shift + F) to find every spot to edit.
 
@@ -60,7 +60,7 @@ Search the files for `CHECKPOINT` (Ctrl/Cmd + Shift + F) to find every spot to e
 - No projects yet? Class assignments, a hackathon project, or "this website" all count.
 - Broke something? Press Ctrl/Cmd + Z, or ask a helper. Everyone breaks something.
 
-## Step 4: Save and upload your changes (≈5 min)
+## Step 4: Save and upload your changes 
 
 Back in the terminal (VS Code has one under **Terminal → New Terminal**):
 
@@ -80,7 +80,7 @@ The first time you push, Git may ask you to sign in to GitHub. Choose **Sign in 
 
 Refresh your repo on GitHub and you should see your changes.
 
-## Step 5: Go live (≈5 min)
+## Step 5: Go live 
 
 1. On your repo, go to **Settings → Pages** (in the left sidebar).
 2. Under **Build and deployment → Source**, pick **Deploy from a branch**.
@@ -90,7 +90,7 @@ Refresh your repo on GitHub and you should see your changes.
 
 🎉 **Open it on your phone and drop the link in the workshop Discord channel.**
 
-## Step 6: Watch it update automatically (≈5 min)
+## Step 6: Watch it update automatically 
 
 Change anything (a new skill, a different color), then:
 
@@ -100,14 +100,13 @@ git commit -m "Update my site"
 git push
 ```
 
-Wait a minute and refresh your live site. Every push redeploys it. That's the same idea behind the CI/CD pipelines real companies use, and exactly how your RebelHacks demo should go live.
+Wait a minute and refresh your live site [Use (Ctrl/Cmd + Shift + R) since github pages stores cache for 10 mins]. Every push redeploys it. That's the same idea behind the CI/CD pipelines real companies use, and exactly how your RebelHacks demo should go live.
 
 ---
 
 ## Bonus challenges
 
 - **Shorter URL:** rename your repo to `YOUR-USERNAME.github.io` (Settings → General → Repository name). Your site moves to `https://YOUR-USERNAME.github.io` with nothing after it.
-- **Add a photo:** put an image in the folder, then replace the `YN` avatar with `<img src="me.jpg" alt="Your Name" class="avatar">`.
 - **Add a resume:** drop `resume.pdf` in the folder and link to it with `<a class="btn btn-ghost" href="resume.pdf">Resume</a>`.
 - **Try Vercel:** sign in at https://vercel.com with GitHub, click **Add New → Project**, import this repo, and click **Deploy**. Same site, different host.
 
