@@ -1,6 +1,6 @@
 # Zero to Deployed: Portfolio Starter
 
-**UNLV Software Engineering Club workshop.** By the end you'll have a personal portfolio site live on the internet at a URL you can put on your resume and text to your friends.
+**UNLV Software Engineering Club workshop.** By the end, you'll have a personal portfolio site live on the internet at a URL you can put on your resume and text to your friends!
 
 ```
 your laptop  →  GitHub  →  GitHub Pages  →  https://your-username.github.io/portfolio
