@@ -109,12 +109,12 @@ main, .nav, .footer {
 }
 
 .hero-photo {
-  justify-self: end;
+  justify-self: end;                 /* pin it to the right edge */
   width: 280px;
   height: 280px;
-  object-fit: cover;
-  border-radius: var(--radius);
-  box-shadow: 0 0 0 var(--accent);
+  object-fit: cover;                 /* crop to fill the circle, no stretching */
+  border-radius: var(--radius);                /* rounded square */
+  box-shadow: 0 0 0  var(--accent);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
@@ -170,6 +170,10 @@ h1 {
   font-weight: 600;
   border: 1px solid transparent;
   transition: transform 0.15s, background 0.15s;
+  font: inherit;          
+  font-weight: 600;      
+  cursor: pointer;        
+  color: inherit;
 }
 
 .btn:hover { transform: translateY(-2px); }

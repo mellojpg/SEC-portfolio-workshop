@@ -42,3 +42,18 @@ setInterval(() => {
   roleIndex = (roleIndex + 1) % roles.length;
   roleElement.textContent = roles[roleIndex];
 }, 2200); // milliseconds between changes
+
+// ============================================================
+// Copy email button: copies the address and briefly says "Copied!"
+// ============================================================
+const copyEmail = document.getElementById("copyEmail");
+
+copyEmail.addEventListener("click", async () => {
+  try {
+    await navigator.clipboard.writeText(copyEmail.dataset.email);
+    copyEmail.textContent = "Copied!";
+  } catch (e) {
+    copyEmail.textContent = copyEmail.dataset.email;  // fallback: just show the address
+  }
+  setTimeout(() => (copyEmail.textContent = "Copy Email"), 1800);
+});
