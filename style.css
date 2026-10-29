@@ -6,7 +6,7 @@
    Pick colors at https://htmlcolorcodes.com
    ============================================================ */
 :root {
-  --accent: #950303;
+  --accent: #e11d48;
   --accent-soft: color-mix(in srgb, var(--accent) 14%, transparent);
 
   --bg: #fafaf9;
