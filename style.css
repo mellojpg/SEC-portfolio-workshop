@@ -100,7 +100,34 @@ main, .nav, .footer {
 }
 
 /* ---------- Hero ---------- */
-.hero { padding: 90px 0 70px; }
+.hero {
+  padding: 90px 0 70px;
+  display: grid;
+  grid-template-columns: 1fr auto;   /* text takes the space, photo sits on the right */
+  align-items: center;
+  gap: 48px;
+}
+
+.hero-photo {
+  justify-self: end;                 /* pin it to the right edge */
+  width: 280px;
+  height: 280px;
+  object-fit: cover;                 /* crop to fill the circle, no stretching */
+  border-radius: var(--radius);                /* rounded square */
+  box-shadow: 0 0 0  var(--accent);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.hero-photo:hover {
+  transform: translate(-6px, -6px);        /* photo lifts up and left */
+  box-shadow: 12px 12px 0 var(--accent);   /* solid accent block appears behind it */
+}
+
+/* Skip the motion for people who turn off animations in their OS settings */
+@media (prefers-reduced-motion: reduce) {
+  .hero-photo { transition: none; }
+  .hero-photo:hover { transform: none; }
+}
 
 .eyebrow {
   color: var(--accent);
@@ -247,7 +274,17 @@ h3 { margin: 26px 0 12px; }
 }
 
 /* ---------- Phones ---------- */
-@media (max-width: 560px) {
+@media (max-width: 760px) {
   .nav-links { gap: 12px; font-size: 0.9rem; }
-  .hero { padding: 60px 0 50px; }
+  .hero {
+    padding: 60px 0 50px;
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .hero-photo {
+    width: 180px;
+    height: 180px;
+    justify-self: center;
+    order: -1;          /* above the name on phones */
+  }
 }
